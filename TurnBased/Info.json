@@ -1,10 +1,10 @@
 {
-  "Id": "TurnBased",
-  "DisplayName": "Turn Based Combat",
-  "Author": "Hsinyu",
-  "Version": "1.0.9",
-  "ManagerVersion": "0.14.1",
+  "Id": "TurnBasedUpdated",
+  "DisplayName": "Turn Based Combat Updated",
+  "Author": "lightningmb",
+  "Version": "0.0.1",
+  "ManagerVersion": "0.22.15.0",
   "EntryMethod": "TurnBased.Main.Load",
-  "HomePage": "https://www.nexusmods.com/pathfinderkingmaker/mods/109",
-  "Repository": "https://raw.githubusercontent.com/hsinyuhcan/KingmakerTurnBasedMod/master/TurnBased/Repository.json"
+  "HomePage": "https://www.nexusmods.com/pathfinderkingmaker/mods/215",
+  "Repository": "https://raw.githubusercontent.com/lightningmb/KingmakerTurnBasedMod/master/TurnBased/Repository.json"
 }

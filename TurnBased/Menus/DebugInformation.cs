@@ -6,14 +6,14 @@ using ModMaker;
 using ModMaker.Utility;
 using System.Collections.Generic;
 using System.Linq;
-using TurnBased.Controllers;
-using TurnBased.Utility;
+using TurnBasedUpdated.Controllers;
+using TurnBasedUpdated.Utility;
 using UnityEngine;
 using UnityModManagerNet;
 using static ModMaker.Utility.RichTextExtensions;
-using static TurnBased.Main;
+using static TurnBasedUpdated.Main;
 
-namespace TurnBased.Menus
+namespace TurnBasedUpdated.Menus
 {
     public class DebugInformation : IMenuSelectablePage
     {

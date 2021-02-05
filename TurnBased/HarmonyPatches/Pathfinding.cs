@@ -1,10 +1,10 @@
 ﻿using Harmony12;
 using Kingmaker.View;
-using TurnBased.Utility;
-using static TurnBased.Utility.SettingsWrapper;
-using static TurnBased.Utility.StatusWrapper;
+using TurnBasedUpdated.Utility;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.HarmonyPatches
+namespace TurnBasedUpdated.HarmonyPatches
 {
     static class Pathfinding
     {

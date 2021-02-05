@@ -10,13 +10,13 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
-using TurnBased.Utility;
+using TurnBasedUpdated.Utility;
 using UnityEngine;
 using static ModMaker.Utility.ReflectionCache;
-using static TurnBased.Main;
-using static TurnBased.Utility.StatusWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.HarmonyPatches
+namespace TurnBasedUpdated.HarmonyPatches
 {
     static class UI
     {

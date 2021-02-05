@@ -3,13 +3,13 @@ using Kingmaker.EntitySystem.Entities;
 using Kingmaker.UI.AbilityTarget;
 using ModMaker.Utility;
 using System.Reflection;
-using TurnBased.Controllers;
+using TurnBasedUpdated.Controllers;
 using UnityEngine;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
-using static TurnBased.Utility.StatusWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.UI
+namespace TurnBasedUpdated.UI
 {
     public class MovementIndicatorManager : MonoBehaviour
     {
@@ -24,7 +24,7 @@ namespace TurnBased.UI
             if (!aoeRange)
                 return null;
 
-            GameObject movementIndicator = new GameObject("TurnBasedMovementIndicator");
+            GameObject movementIndicator = new GameObject("TurnBasedUpdatedMovementIndicator");
             movementIndicator.transform.SetParent(abilityTargetSelect.transform, true);
 
             MovementIndicatorManager movementIndicatorManager = movementIndicator.AddComponent<MovementIndicatorManager>();

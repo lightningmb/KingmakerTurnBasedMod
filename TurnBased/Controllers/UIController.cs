@@ -3,11 +3,11 @@ using Kingmaker.PubSubSystem;
 using ModMaker;
 using ModMaker.Utility;
 using System.Reflection;
-using TurnBased.UI;
+using TurnBasedUpdated.UI;
 using UnityEngine;
-using static TurnBased.Main;
+using static TurnBasedUpdated.Main;
 
-namespace TurnBased.Controllers
+namespace TurnBasedUpdated.Controllers
 {
     public class UIController :
         IModEventHandler,
@@ -55,21 +55,21 @@ namespace TurnBased.Controllers
         public void Clear()
         {
             Transform combatTracker;
-            while (combatTracker = Game.Instance.UI.Common.transform.Find("HUDLayout/TurnBasedCombatTracker"))
+            while (combatTracker = Game.Instance.UI.Common.transform.Find("HUDLayout/TurnBasedUpdatedCombatTracker"))
             {
                 combatTracker.SafeDestroy();
             }
             CombatTracker = null;
 
             Transform attackIndicator;
-            while (attackIndicator = Game.Instance.UI.Common.transform.Find("AbilityTargetSelect/TurnBasedAttackIndicator"))
+            while (attackIndicator = Game.Instance.UI.Common.transform.Find("AbilityTargetSelect/TurnBasedUpdatedAttackIndicator"))
             {
                 attackIndicator.gameObject.SafeDestroy();
             }
             AttackIndicator = null;
 
             Transform movementIndicator;
-            while (movementIndicator = Game.Instance.UI.Common.transform.Find("AbilityTargetSelect/TurnBasedMovementIndicator"))
+            while (movementIndicator = Game.Instance.UI.Common.transform.Find("AbilityTargetSelect/TurnBasedUpdatedMovementIndicator"))
             {
                 movementIndicator.SafeDestroy();
             }

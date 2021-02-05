@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace TurnBased
+namespace TurnBasedUpdated
 {
     [JsonObject(MemberSerialization.OptOut)]
     public class DefaultLanguage : ILanguage
@@ -175,7 +175,7 @@ namespace TurnBased
             { "Menu_Btn_RefreshFileList", "Refresh File List" },
             { "Menu_Btn_DefaultLanguage", "Default Language" },
             { "Menu_Txt_FaildToImport", "Faild to import: {0}" },
-            { "Hotkey_Toggle_TurnBasedMode", "Toggle Turn-BasedMode" },
+            { "Hotkey_Toggle_TurnBasedUpdatedMode", "Toggle Turn-BasedMode" },
             { "Hotkey_Toggle_AttackIndicator", "Toggle Attack Indicator" },
             { "Hotkey_Toggle_MovementIndicator", "Toggle Movement Indicator" },
             { "Hotkey_Button_EndTurn", "Button: End Turn" },
@@ -188,7 +188,7 @@ namespace TurnBased
             { "UI_Btn_FullAttack", "<size=-4>Full Attack</size>" },
             { "UI_Txt_Unknown", "Unknown" },
             { "UI_Txt_Error", "Error: Turn-Based Combat Mod" },
-            { "UI_Txt_TurnBasedMode", "Mode: Turn-Based" },
+            { "UI_Txt_TurnBasedUpdatedMode", "Mode: Turn-Based" },
             { "UI_Txt_RealTimeMode", "Mode: Real Time" },
             { "UI_Log_RoundStarted", "Round {0} started." },
             { "UI_Log_SurpriseRoundStarted", "Surprise round started." }

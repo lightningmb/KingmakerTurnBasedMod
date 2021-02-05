@@ -19,7 +19,7 @@ using System.Reflection;
 using UnityEngine;
 using static ModMaker.Utility.ReflectionCache;
 
-namespace TurnBased.Utility
+namespace TurnBasedUpdated.Utility
 {
     public static class NonPublicAccessExtensions
     {

@@ -36,13 +36,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
-using TurnBased.Utility;
+using TurnBasedUpdated.Utility;
 using UnityEngine;
 using static ModMaker.Utility.ReflectionCache;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
 
-namespace TurnBased.HarmonyPatches
+namespace TurnBasedUpdated.HarmonyPatches
 {
     static class Bugfixes
     {

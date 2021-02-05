@@ -4,7 +4,7 @@ using ModMaker.Utility;
 using System.Reflection;
 using UnityModManagerNet;
 
-namespace TurnBased
+namespace TurnBasedUpdated
 {
 #if (DEBUG)
     [EnableReloading]

@@ -4,10 +4,10 @@ using System.IO;
 using UnityEngine;
 using UnityModManagerNet;
 using static ModMaker.Utility.RichTextExtensions;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
 
-namespace TurnBased.Menus
+namespace TurnBasedUpdated.Menus
 {
     public class LanguageSelection : IMenuSelectablePage
     {

@@ -1,14 +1,14 @@
 ﻿using Kingmaker.UI.SettingsUI;
 using ModMaker.Utility;
-using TurnBased.Utility;
+using TurnBasedUpdated.Utility;
 using UnityModManagerNet;
 
-namespace TurnBased
+namespace TurnBasedUpdated
 {
     public class Settings : UnityModManager.ModSettings
     {
         public string lastModVersion;
-        public bool toggleTurnBasedMode = true;
+        public bool toggleTurnBasedUpdatedMode = true;
 
         // gameplay
         public float distanceOfFiveFootStep = 1.5f;

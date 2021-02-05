@@ -8,9 +8,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
 using static ModMaker.Utility.ReflectionCache;
-using static TurnBased.Utility.StatusWrapper;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.HarmonyPatches
+namespace TurnBasedUpdated.HarmonyPatches
 {
     static class Stealth
     {

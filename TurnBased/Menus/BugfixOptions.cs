@@ -1,14 +1,14 @@
 ﻿using ModMaker;
 using ModMaker.Utility;
 using System;
-using TurnBased.Controllers;
-using TurnBased.Utility;
+using TurnBasedUpdated.Controllers;
+using TurnBasedUpdated.Utility;
 using UnityEngine;
 using UnityModManagerNet;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
 
-namespace TurnBased.Menus
+namespace TurnBasedUpdated.Menus
 {
     public class BugfixOptions : IMenuSelectablePage
     {

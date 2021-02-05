@@ -7,8 +7,8 @@
     <ProjectGuid>{30EF7FE3-E17B-463D-921F-E610BA654F9B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TurnBased</RootNamespace>
-    <AssemblyName>TurnBased</AssemblyName>
+    <RootNamespace>TurnBasedUpdated</RootNamespace>
+    <AssemblyName>TurnBasedUpdated</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>false</Deterministic>
@@ -155,12 +155,17 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions />
   <PropertyGroup>
-    <PostBuildEvent>set modDir=TurnBased
+    <PostBuildEvent>set modDir=TurnBasedUpdate
+set modVersion=0.0.1
 rd "$(TargetDir)%25modDir%25"  /s /q
 mkdir "$(TargetDir)%25modDir%25"
 copy "$(TargetPath)" "$(TargetDir)%25modDir%25" /y
 copy "$(ProjectDir)\Info.json" "$(TargetDir)%25modDir%25\Info.json" /y
+copy "$(ProjectDir)\Info.json" "$(TargetDir)%25modDir%25\Repository.json" /y
 mkdir "$(TargetDir)%25modDir%25\Localization"
-copy "$(ProjectDir)\Localization\*" "$(TargetDir)%25modDir%25\Localization" /y</PostBuildEvent>
+copy "$(ProjectDir)\Localization\*" "$(TargetDir)%25modDir%25\Localization" /y
+echo Creating mod package
+powershell Compress-Archive -Path "$(TargetDir)%25modDir%25" -DestinationPath '$(SolutionDir)Turn-Based-Update_%25modVersion%25_$(ConfigurationName).zip' -Force
+echo Package created at '$(SolutionDir)Turn-Based-Update_%25modVersion%25_$(ConfigurationName).zip'</PostBuildEvent>
   </PropertyGroup>
 </Project>

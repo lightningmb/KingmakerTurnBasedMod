@@ -13,13 +13,13 @@ using Kingmaker.View;
 using Pathfinding;
 using System;
 using System.Collections.Generic;
-using TurnBased.Controllers;
-using TurnBased.Utility;
+using TurnBasedUpdated.Controllers;
+using TurnBasedUpdated.Utility;
 using UnityEngine;
-using static TurnBased.Utility.SettingsWrapper;
-using static TurnBased.Utility.StatusWrapper;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.HarmonyPatches
+namespace TurnBasedUpdated.HarmonyPatches
 {
     static class Charge
     {

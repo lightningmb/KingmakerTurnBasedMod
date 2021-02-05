@@ -6,10 +6,10 @@ using Kingmaker.EntitySystem.Entities;
 using Kingmaker.UnitLogic;
 using Kingmaker.View;
 using System;
-using TurnBased.Utility;
-using static TurnBased.Utility.StatusWrapper;
+using TurnBasedUpdated.Utility;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.HarmonyPatches
+namespace TurnBasedUpdated.HarmonyPatches
 {
     static class Prone
     {

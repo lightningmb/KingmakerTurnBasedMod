@@ -11,7 +11,7 @@ using Kingmaker.Utility;
 using System;
 using System.Linq;
 
-namespace TurnBased.Utility
+namespace TurnBasedUpdated.Utility
 {
     public static class MiscExtensions
     {

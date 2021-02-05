@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
 
-namespace TurnBased.Controllers
+namespace TurnBasedUpdated.Controllers
 {
     public class HotkeyController : 
         IModEventHandler,

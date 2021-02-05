@@ -13,15 +13,15 @@ using ModMaker.Utility;
 using System;
 using System.Linq;
 using TMPro;
-using TurnBased.Utility;
+using TurnBasedUpdated.Utility;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
-using static TurnBased.Utility.StatusWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.UI
+namespace TurnBasedUpdated.UI
 {
     public class UnitButtonManager : 
         MonoBehaviour,

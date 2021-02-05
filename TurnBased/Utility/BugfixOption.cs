@@ -1,6 +1,6 @@
-﻿using static TurnBased.Utility.StatusWrapper;
+﻿using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.Utility
+namespace TurnBasedUpdated.Utility
 {
     public class BugfixOption
     {

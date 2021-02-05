@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurnBased", "TurnBased\TurnBased.csproj", "{30EF7FE3-E17B-463D-921F-E610BA654F9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurnBasedUpdated", "TurnBased\TurnBasedUpdated.csproj", "{30EF7FE3-E17B-463D-921F-E610BA654F9B}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ModMaker", "..\KingmakerModMaker\ModMaker\ModMaker.shproj", "{7D3F9428-C134-47FE-9D04-305B4D330401}"
 EndProject

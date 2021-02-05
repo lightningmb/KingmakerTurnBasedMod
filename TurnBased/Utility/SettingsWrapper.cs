@@ -1,7 +1,7 @@
 ﻿using Kingmaker.Utility;
-using static TurnBased.Main;
+using static TurnBasedUpdated.Main;
 
-namespace TurnBased.Utility
+namespace TurnBasedUpdated.Utility
 {
     public static class SettingsWrapper
     {
@@ -14,7 +14,7 @@ namespace TurnBased.Utility
 
         // hotkeys
         public const string HOTKEY_PREFIX = "Hotkey_";
-        public const string HOTKEY_FOR_TOGGLE_MODE = HOTKEY_PREFIX + "Toggle_TurnBasedMode";
+        public const string HOTKEY_FOR_TOGGLE_MODE = HOTKEY_PREFIX + "Toggle_TurnBasedUpdatedMode";
         public const string HOTKEY_FOR_TOGGLE_ATTACK_INDICATOR = HOTKEY_PREFIX + "Toggle_AttackIndicator";
         public const string HOTKEY_FOR_TOGGLE_MOVEMENT_INDICATOR = HOTKEY_PREFIX + "Toggle_MovementIndicator";
         public const string HOTKEY_FOR_END_TURN = HOTKEY_PREFIX + "Button_EndTurn";

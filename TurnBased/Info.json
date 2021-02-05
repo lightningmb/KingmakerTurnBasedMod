@@ -4,7 +4,7 @@
   "Author": "lightningmb",
   "Version": "0.0.1",
   "ManagerVersion": "0.22.15.0",
-  "EntryMethod": "TurnBased.Main.Load",
+  "EntryMethod": "TurnBasedUpdated.Main.Load",
   "HomePage": "https://www.nexusmods.com/pathfinderkingmaker/mods/215",
   "Repository": "https://raw.githubusercontent.com/lightningmb/KingmakerTurnBasedMod/master/TurnBased/Repository.json"
 }

@@ -8,12 +8,12 @@ using ModMaker;
 using System;
 using System.Linq;
 using System.Reflection;
-using TurnBased.Utility;
+using TurnBasedUpdated.Utility;
 using static ModMaker.Utility.ReflectionCache;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
 
-namespace TurnBased.Controllers
+namespace TurnBasedUpdated.Controllers
 {
     public class BlueprintController : 
         IModEventHandler,

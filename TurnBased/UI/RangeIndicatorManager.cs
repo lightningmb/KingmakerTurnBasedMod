@@ -6,7 +6,7 @@ using Kingmaker.Visual;
 using Kingmaker.Visual.Decals;
 using UnityEngine;
 
-namespace TurnBased.UI
+namespace TurnBasedUpdated.UI
 {
     public class RangeIndicatorManager : MonoBehaviour
     {

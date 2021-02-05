@@ -9,15 +9,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using TMPro;
-using TurnBased.Controllers;
+using TurnBasedUpdated.Controllers;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
-using static TurnBased.Utility.StatusWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.UI
+namespace TurnBasedUpdated.UI
 {
     public class CombatTrackerManager : MonoBehaviour
     {
@@ -49,7 +49,7 @@ namespace TurnBased.UI
                 return null;
 
             // initialize window
-            GameObject combatTracker = new GameObject("TurnBasedCombatTracker", typeof(RectTransform), typeof(CanvasGroup));
+            GameObject combatTracker = new GameObject("TurnBasedUpdatedCombatTracker", typeof(RectTransform), typeof(CanvasGroup));
             combatTracker.transform.SetParent(hudLayout.transform);
             combatTracker.transform.SetSiblingIndex(0);
 

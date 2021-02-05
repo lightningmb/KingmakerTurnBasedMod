@@ -5,10 +5,10 @@ using Kingmaker.EntitySystem.Entities;
 using Kingmaker.UnitLogic.Commands;
 using Kingmaker.UnitLogic.Parts;
 using System;
-using TurnBased.Utility;
-using static TurnBased.Utility.StatusWrapper;
+using TurnBasedUpdated.Utility;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.HarmonyPatches
+namespace TurnBasedUpdated.HarmonyPatches
 {
     static class Confusion
     {

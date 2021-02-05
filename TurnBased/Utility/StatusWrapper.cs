@@ -2,10 +2,10 @@
 using Kingmaker.EntitySystem.Entities;
 using Kingmaker.GameModes;
 using Kingmaker.UI.Common;
-using TurnBased.Controllers;
-using static TurnBased.Main;
+using TurnBasedUpdated.Controllers;
+using static TurnBasedUpdated.Main;
 
-namespace TurnBased.Utility
+namespace TurnBasedUpdated.Utility
 {
     public static class StatusWrapper
     {

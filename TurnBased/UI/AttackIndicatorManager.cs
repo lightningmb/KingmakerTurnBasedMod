@@ -6,14 +6,14 @@ using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using ModMaker.Utility;
 using System.Reflection;
-using TurnBased.Controllers;
-using TurnBased.Utility;
+using TurnBasedUpdated.Controllers;
+using TurnBasedUpdated.Utility;
 using UnityEngine;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
-using static TurnBased.Utility.StatusWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.UI
+namespace TurnBasedUpdated.UI
 {
     public class AttackIndicatorManager : 
         MonoBehaviour,
@@ -36,7 +36,7 @@ namespace TurnBased.UI
             if (!aoeRange)
                 return null;
 
-            GameObject attackIndicator = new GameObject("TurnBasedAttackIndicator");
+            GameObject attackIndicator = new GameObject("TurnBasedUpdatedAttackIndicator");
             attackIndicator.transform.SetParent(abilityTargetSelect.transform, true);
 
             AttackIndicatorManager attackIndicatorManager = attackIndicator.AddComponent<AttackIndicatorManager>();

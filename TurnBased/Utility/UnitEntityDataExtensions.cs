@@ -20,11 +20,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
-using static TurnBased.Utility.StatusWrapper;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
+using static TurnBasedUpdated.Utility.StatusWrapper;
 
-namespace TurnBased.Utility
+namespace TurnBasedUpdated.Utility
 {
     public static class UnitEntityDataExtensions
     {

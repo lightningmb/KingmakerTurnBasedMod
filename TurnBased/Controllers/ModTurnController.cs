@@ -9,10 +9,10 @@ using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.UnitLogic.Parts;
 using System;
 using System.Linq;
-using TurnBased.Utility;
-using static TurnBased.Utility.SettingsWrapper;
+using TurnBasedUpdated.Utility;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
 
-namespace TurnBased.Controllers
+namespace TurnBasedUpdated.Controllers
 {
     public class ModTurnController :
         IDisposable,

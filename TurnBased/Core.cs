@@ -5,11 +5,11 @@ using ModMaker.Utility;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using TurnBased.Controllers;
-using static TurnBased.Main;
-using static TurnBased.Utility.SettingsWrapper;
+using TurnBasedUpdated.Controllers;
+using static TurnBasedUpdated.Main;
+using static TurnBasedUpdated.Utility.SettingsWrapper;
 
-namespace TurnBased
+namespace TurnBasedUpdated
 {
     public class Core :
         IModEventHandler,
@@ -28,17 +28,17 @@ namespace TurnBased
         public UIController UI { get; internal set; }
 
         public bool Enabled {
-            get => Mod.Settings.toggleTurnBasedMode;
+            get => Mod.Settings.toggleTurnBasedUpdatedMode;
             set {
-                if (Mod.Settings.toggleTurnBasedMode != value)
+                if (Mod.Settings.toggleTurnBasedUpdatedMode != value)
                 {
                     Mod.Debug(MethodBase.GetCurrentMethod(), value);
 
-                    Mod.Settings.toggleTurnBasedMode = value;
+                    Mod.Settings.toggleTurnBasedUpdatedMode = value;
                     Blueprints.Update(true);
                     Combat.Reset(value);
                     EventBus.RaiseEvent<IWarningNotificationUIHandler>
-                        (h => h.HandleWarning(value ? Local["UI_Txt_TurnBasedMode"] : Local["UI_Txt_RealTimeMode"], false));
+                        (h => h.HandleWarning(value ? Local["UI_Txt_TurnBasedUpdatedMode"] : Local["UI_Txt_RealTimeMode"], false));
                 }
             }
         }
@@ -60,7 +60,7 @@ namespace TurnBased
             Blueprints?.Update(true);
         }
 
-        private void HandleToggleTurnBasedMode()
+        private void HandleToggleTurnBasedUpdatedMode()
         {
             Enabled = !Enabled;
         }
@@ -80,7 +80,7 @@ namespace TurnBased
             else
                 Mod.Settings.lastModVersion = Mod.Version.ToString();
 
-            HotkeyHelper.Bind(HOTKEY_FOR_TOGGLE_MODE, HandleToggleTurnBasedMode);
+            HotkeyHelper.Bind(HOTKEY_FOR_TOGGLE_MODE, HandleToggleTurnBasedUpdatedMode);
             EventBus.Subscribe(this);
         }
 
@@ -89,7 +89,7 @@ namespace TurnBased
             Mod.Debug(MethodBase.GetCurrentMethod());
             
             EventBus.Unsubscribe(this);
-            HotkeyHelper.Unbind(HOTKEY_FOR_TOGGLE_MODE, HandleToggleTurnBasedMode);
+            HotkeyHelper.Unbind(HOTKEY_FOR_TOGGLE_MODE, HandleToggleTurnBasedUpdatedMode);
         }
 
         public void OnAreaBeginUnloading() { }
@@ -100,7 +100,7 @@ namespace TurnBased
 
             LastTickTimeOfAbilityExecutionProcess.Clear();
 
-            HotkeyHelper.Bind(HOTKEY_FOR_TOGGLE_MODE, HandleToggleTurnBasedMode);
+            HotkeyHelper.Bind(HOTKEY_FOR_TOGGLE_MODE, HandleToggleTurnBasedUpdatedMode);
         }
     }
 }

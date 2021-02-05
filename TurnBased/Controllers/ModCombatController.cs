@@ -22,7 +22,7 @@ using static TurnBased.Utility.SettingsWrapper;
 
 namespace TurnBased.Controllers
 {
-    public class CombatController : 
+    public class ModCombatController : 
         IModEventHandler,
         IInGameHandler,
         IPartyCombatHandler,
@@ -33,7 +33,7 @@ namespace TurnBased.Controllers
     {
         #region Fields
 
-        private TurnController _currentTurn;
+        private ModTurnController _currentTurn;
         private bool _hasEnemyInCombat;
         private bool _hasSurpriseRound;
         private bool _isUnitsChanged;
@@ -46,7 +46,7 @@ namespace TurnBased.Controllers
 
         #region Properties
 
-        public TurnController CurrentTurn {
+        public ModTurnController CurrentTurn {
             get => _currentTurn;
             private set {
                 if (_currentTurn != value)
@@ -148,7 +148,7 @@ namespace TurnBased.Controllers
         {
             if (unit.IsInCombat && _units.Contains(unit))
             {
-                CurrentTurn = new TurnController(unit);
+                CurrentTurn = new ModTurnController(unit);
                 CurrentTurn.OnDelay += HandleDelayTurn;
                 CurrentTurn.OnEnd += HandleEndTurn;
                 CurrentTurn.Start();

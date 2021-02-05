@@ -16,7 +16,7 @@ namespace TurnBased.HarmonyPatches
     {
         // do not provoke attack of opportunity when moving using 5-foot step
         // fix sometimes a unit can't make an AoO if it's threatening multiple targets
-        [HarmonyPatch(typeof(UnitCombatState), "ShouldAttackOnDisengage", typeof(UnitEntityData))]
+        //[HarmonyPatch(typeof(UnitCombatState), "ShouldAttackOnDisengage", typeof(UnitEntityData))]
         static class UnitCombatState_ShouldAttackOnDisengage_Patch
         {
             [HarmonyPrefix]

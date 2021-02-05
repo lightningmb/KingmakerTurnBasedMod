@@ -147,7 +147,7 @@ namespace TurnBased.HarmonyPatches
             [HarmonyPostfix]
             static void Postfix(UnitEntityData caster, ref bool __result)
             {
-                if (IsInCombat() && __result && caster == CurrentUnit(out TurnController currentTurn))
+                if (IsInCombat() && __result && caster == CurrentUnit(out ModTurnController currentTurn))
                 {
                     __result = currentTurn.TimeMoved == 0f;
                 }

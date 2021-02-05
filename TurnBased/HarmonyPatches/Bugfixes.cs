@@ -114,7 +114,7 @@ namespace TurnBased.HarmonyPatches
         }
 
         // fix the action type of swapping weapons
-        [HarmonyPatch]
+        //[HarmonyPatch]
         static class UnitViewHandsEquipment_AnimateEquipmentChangeInCombat_Patch
         {
             [HarmonyTargetMethod]
@@ -532,7 +532,7 @@ namespace TurnBased.HarmonyPatches
 
         // fix you can make an AoO to an unmoved unit as if it's leaving the threatened range (when switching from reach weapon)
         // fix Acrobatics (Mobility) can be triggered even if the AoO is provoked due to reasons other than movement
-        [HarmonyPatch(typeof(UnitCombatState), "ShouldAttackOnDisengage", typeof(UnitEntityData))]
+        //[HarmonyPatch(typeof(UnitCombatState), "ShouldAttackOnDisengage", typeof(UnitEntityData))]
         static class UnitCombatState_ShouldAttackOnDisengage_Patch
         {
             [HarmonyPrefix]
@@ -564,7 +564,7 @@ namespace TurnBased.HarmonyPatches
         }
 
         // fix Acrobatics (Mobility) can be triggered even if the AoO is provoked due to reasons other than movement
-        [HarmonyPatch(typeof(UnitCombatState), nameof(UnitCombatState.AttackOfOpportunity), typeof(UnitEntityData))]
+        //[HarmonyPatch(typeof(UnitCombatState), nameof(UnitCombatState.AttackOfOpportunity), typeof(UnitEntityData))]
         static class UnitCombatState_AttackOfOpportunity_Patch
         {
             [HarmonyTranspiler]
@@ -687,7 +687,7 @@ namespace TurnBased.HarmonyPatches
         }
 
         // fix the ability circle does not appear properly when you first time select any ability of the unit using the hotkey  
-        [HarmonyPatch(typeof(GUIDecal), "InitAnimator")]
+        //[HarmonyPatch(typeof(GUIDecal), "InitAnimator")]
         static class GUIDecal_InitAnimator_Patch
         {
             [HarmonyPostfix]

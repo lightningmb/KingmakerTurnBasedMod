@@ -39,17 +39,17 @@ namespace TurnBased.HarmonyPatches
         }
 
         // modify collision radius
-        [HarmonyPatch(typeof(UnitMovementAgent), nameof(UnitMovementAgent.Corpulence), MethodType.Getter)]
-        static class UnitMovementAgent_get_Corpulence_Patch
-        {
-            [HarmonyPostfix]
-            static void Postfix(ref float __result)
-            {
-                if (IsInCombat())
-                {
-                    __result *= RadiusOfCollision;
-                }
-            }
-        }
+        //[HarmonyPatch(typeof(UnitMovementAgent), nameof(UnitMovementAgent.Corpulence), MethodType.Getter)]
+        //static class UnitMovementAgent_get_Corpulence_Patch
+        //{
+        //    [HarmonyPostfix]
+        //    static void Postfix(ref float __result)
+        //    {
+        //        if (IsInCombat())
+        //        {
+        //            __result *= RadiusOfCollision;
+        //        }
+        //    }
+        //}
     }
 }

@@ -60,10 +60,10 @@ namespace TurnBased.UI
         {
             GameObject sourceObject = Game.Instance.UI.Common?.transform
                 .Find("ServiceWindow/Journal").GetComponent<JournalQuestLog>().Chapter.QuestNaviElement.gameObject;
-            OvertipController overtip = Game.Instance.UI.BarkManager?.Overtip;
+            //OvertipController overtip = Game.Instance.UI.BarkManager?;
 
-            if (!sourceObject || !overtip)
-                return null;
+            //if (!sourceObject || !overtip)
+            //    return null;
 
             GameObject buttonUnit = Instantiate(sourceObject);
             buttonUnit.name = "Button_Unit";
@@ -106,21 +106,21 @@ namespace TurnBased.UI
 
             GameObject standardAction = Instantiate(isUnableToAct, buttonUnit.transform);
             standardAction.name = "StandardAction";
-            standardAction.transform.Find("Icon").gameObject.GetComponent<Image>().sprite = overtip.AttackSprite;
+            //standardAction.transform.Find("Icon").gameObject.GetComponent<Image>().sprite = overtip.AttackSprite;
             RectTransform rectStandardAction = (RectTransform)standardAction.transform;
             rectStandardAction.anchoredPosition = new Vector2(-3f - UNIT_BUTTON_HEIGHT * 2, 0.4f);
             rectStandardAction.sizeDelta = iconSize;
 
             GameObject moveAction = Instantiate(isUnableToAct, buttonUnit.transform);
             moveAction.name = "MoveAction";
-            moveAction.transform.Find("Icon").gameObject.GetComponent<Image>().sprite = overtip.WalkSprite;
+            //moveAction.transform.Find("Icon").gameObject.GetComponent<Image>().sprite = overtip.WalkSprite;
             RectTransform rectMoveAction = (RectTransform)moveAction.transform;
             rectMoveAction.anchoredPosition = new Vector2(-3f - UNIT_BUTTON_HEIGHT, 0.4f);
             rectMoveAction.sizeDelta = iconSize;
 
             GameObject swiftAction = Instantiate(isUnableToAct, buttonUnit.transform);
             swiftAction.name = "SwiftAction";
-            swiftAction.transform.Find("Icon").gameObject.GetComponent<Image>().sprite = overtip.InteractSprite;
+            //swiftAction.transform.Find("Icon").gameObject.GetComponent<Image>().sprite = overtip.InteractSprite;
             ((RectTransform)swiftAction.transform).sizeDelta = iconSize;
 
             isFlatFooted.transform.SetAsLastSibling();

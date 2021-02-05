@@ -19,7 +19,7 @@ namespace TurnBased
 
         public BlueprintController Blueprints { get; internal set; }
 
-        public CombatController Combat { get; internal set; }
+        public ModCombatController Combat { get; internal set; }
 
         public HotkeyController Hotkeys { get; internal set; }
 

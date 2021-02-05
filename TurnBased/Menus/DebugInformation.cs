@@ -48,8 +48,8 @@ namespace TurnBased.Menus
             GUILayout.Label($"Time Scale: {Time.timeScale:f2}x");
             GUILayout.Label($"Game Time: {Game.Instance.Player.GameTime}");
 
-            CombatController combat = Mod.Core.Combat;
-            TurnController currentTurn = combat.CurrentTurn;
+            ModCombatController combat = Mod.Core.Combat;
+            ModTurnController currentTurn = combat.CurrentTurn;
 
             GUILayout.Space(10f);
             GUILayout.Label($"Combat Initialized: {combat.Initialized}");

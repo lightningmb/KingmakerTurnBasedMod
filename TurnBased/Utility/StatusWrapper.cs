@@ -39,22 +39,22 @@ namespace TurnBased.Utility
 
         public static bool IsPreparing()
         {
-            return CurrentTurn()?.Status == TurnController.TurnStatus.Preparing;
+            return CurrentTurn()?.Status == ModTurnController.TurnStatus.Preparing;
         }
 
         public static bool IsActing()
         {
-            return CurrentTurn()?.Status == TurnController.TurnStatus.Acting;
+            return CurrentTurn()?.Status == ModTurnController.TurnStatus.Acting;
         }
 
         public static bool IsDelaying()
         {
-            return CurrentTurn()?.Status == TurnController.TurnStatus.Delayed;
+            return CurrentTurn()?.Status == ModTurnController.TurnStatus.Delayed;
         }
 
         public static bool IsEnding()
         {
-            return CurrentTurn()?.Status == TurnController.TurnStatus.Ending;
+            return CurrentTurn()?.Status == ModTurnController.TurnStatus.Ending;
         }
 
         public static bool IsPassing()
@@ -62,7 +62,7 @@ namespace TurnBased.Utility
             return CurrentTurn() == null;
         }
 
-        public static TurnController CurrentTurn()
+        public static ModTurnController CurrentTurn()
         {
             return Mod.Core.Combat.CurrentTurn;
         }
@@ -72,7 +72,7 @@ namespace TurnBased.Utility
             return CurrentTurn()?.Unit;
         }
 
-        public static UnitEntityData CurrentUnit(out TurnController currentTurn)
+        public static UnitEntityData CurrentUnit(out ModTurnController currentTurn)
         {
             return (currentTurn = CurrentTurn())?.Unit;
         }

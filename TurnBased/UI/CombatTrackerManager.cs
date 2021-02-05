@@ -291,7 +291,7 @@ namespace TurnBased.UI
 
         private void UpdateButtons()
         {
-            TurnController currentTurn = CurrentTurn();
+            ModTurnController currentTurn = CurrentTurn();
 
             // end button
             _buttonEndTurn.IsInteractable = currentTurn != null && currentTurn.CanEndTurn();

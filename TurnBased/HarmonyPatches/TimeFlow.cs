@@ -423,7 +423,7 @@ namespace TurnBased.HarmonyPatches
             }
         }
 
-        // ** moved to TurnController
+        // ** moved to ModTurnController
         [HarmonyPatch(typeof(UnitTicksController), "TickOnUnit", typeof(UnitEntityData))]
         static class UnitTicksController_TickOnUnit_Patch
         {

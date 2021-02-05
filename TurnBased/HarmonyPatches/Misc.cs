@@ -24,7 +24,7 @@ namespace TurnBased.HarmonyPatches
     static class Misc
     {
         // toggle 5-foot step when right click on the ground
-        [HarmonyPatch(typeof(ClickGroundHandler), nameof(ClickGroundHandler.OnClick), typeof(GameObject), typeof(Vector3), typeof(int))]
+        //[HarmonyPatch(typeof(ClickGroundHandler), nameof(ClickGroundHandler.OnClick), typeof(GameObject), typeof(Vector3), typeof(int))]
         static class ClickGroundHandler_OnClick_Patch
         {
             [HarmonyPrefix]

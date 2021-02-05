@@ -14,7 +14,7 @@ using static TurnBased.Utility.SettingsWrapper;
 
 namespace TurnBased.Controllers
 {
-    public class TurnController :
+    public class ModTurnController :
         IDisposable,
         IUnitCommandActHandler,
         IUnitCommandEndHandler,
@@ -78,7 +78,7 @@ namespace TurnBased.Controllers
 
         #endregion
 
-        public TurnController(UnitEntityData unit)
+        public ModTurnController(UnitEntityData unit)
         {
             Unit = unit;
             Commands = unit.Commands;

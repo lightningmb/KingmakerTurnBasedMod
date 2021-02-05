@@ -137,8 +137,8 @@
     <Compile Include="Utility\StatusWrapper.cs" />
     <Compile Include="UI\CombatTrackerManager.cs" />
     <Compile Include="UI\UnitButtonManager.cs" />
-    <Compile Include="Controllers\CombatController.cs" />
-    <Compile Include="Controllers\TurnController.cs" />
+    <Compile Include="Controllers\ModCombatController.cs" />
+    <Compile Include="Controllers\ModTurnController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.json" />

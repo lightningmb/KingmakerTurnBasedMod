@@ -155,13 +155,14 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions />
   <PropertyGroup>
-    <PostBuildEvent>set modDir=TurnBasedUpdate
+    <PostBuildEvent>set modDir=TurnBasedUpdated
 set modVersion=0.0.1
 rd "$(TargetDir)%25modDir%25"  /s /q
 mkdir "$(TargetDir)%25modDir%25"
 copy "$(TargetPath)" "$(TargetDir)%25modDir%25" /y
+if $(ConfigurationName) == Debug (copy "$(TargetDir)*.pdb" "$(TargetDir)%25modDir%25" /y)
 copy "$(ProjectDir)\Info.json" "$(TargetDir)%25modDir%25\Info.json" /y
-copy "$(ProjectDir)\Info.json" "$(TargetDir)%25modDir%25\Repository.json" /y
+copy "$(ProjectDir)\Repository.json" "$(TargetDir)%25modDir%25\Repository.json" /y
 mkdir "$(TargetDir)%25modDir%25\Localization"
 copy "$(ProjectDir)\Localization\*" "$(TargetDir)%25modDir%25\Localization" /y
 echo Creating mod package
